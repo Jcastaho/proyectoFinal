@@ -47,6 +47,7 @@ a{
 }
 a:hover{
   color: #08a05c;
+  text-decoration: none;
 }
 li{
   list-style: none;
@@ -61,14 +62,18 @@ header ul li {
 }
 header ul li a{
   font-weight: bold;  
+  text-decoration: none;
 }
 header .cart{
   position: relative;
   cursor: pointer;
+  text-decoration: none;
+  margin-left: -10rem;
 }
 header .cart box-icon{
   width: 45px;
   height: 45px;
+  
 }
 header .cart span{
   position: absolute;
@@ -86,12 +91,33 @@ header .cart span{
   font-weight: 700;
   background-color: crimson;
 }
+header .perfil{
+  margin-right: -5em;
+}
+/*-------------------LOGIN--------------------------------------------*/
+
+.containerPrincipal { 
+  position: absolute;  
+  left: 50%;  
+  top: 50%;  
+  transform: translate(-50%,-50%);  
+  border: 1px solid blue;  
+  padding: 40px;  
+  background-color: white;  
+}
+.containerSecundario{ 
+  text-align: center;  
+}
+
+
+
 
 /*-------------------INICIO------------------*/
 .inicio{
   width: 100%;
   margin: 0 auto;
   padding-top: 9rem;
+
 }
 .inicio h1{
   font-size: 2rem;
@@ -186,9 +212,11 @@ header .cart span{
 .buttom div a{
   color: white;
   font-weight: 700;
+  text-decoration: none;
 }
 .buttom div a:hover{
   color: white;
+  text-decoration: none;
 }
 
 /*responsive: desaparece la lista cuando la pantalla es menor a 600px*/
