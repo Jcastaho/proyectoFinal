@@ -1,10 +1,11 @@
 import React, { useState, useEffect, createContext } from "react";
-import Data from '../data.js';
+import Data from '../Data.js';
 
 export const DataContext = createContext();
 
 export const DataProvider = (props) => {
     const [productos, setProductos] = useState([]);
+    const [menu, setMenu] = useState(false)
 
     useEffect(() => {
         const producto = Data.items
@@ -17,7 +18,8 @@ export const DataProvider = (props) => {
     },[])
 
     const value = {
-        productos : [productos]
+        productos : [productos],
+        menu: [menu, setMenu]
     }
 
 

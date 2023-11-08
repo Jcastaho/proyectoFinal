@@ -1,14 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext} from "react";
 import Nike from "../../images/Nike.jpg";
 import Perfil1 from "../../images/perfil.png";
 import Perfil2 from "../../images/cerrarsesion.png";
 import { Link } from "react-router-dom";
 import Cookies from 'universal-cookie';
+import {DataContext} from "../../context/dataprovider";
 
 const cookies = new Cookies();
 
 export const Header = () => {
     const [mostrarPerfil, setMostrarPerfil] = useState(false);
+
+    const value = useContext(DataContext);
+    const [menu, setMenu] = value.menu;
+
+    console.log(menu);
+
+    const toogleMenu = () =>{
+        setMenu(!menu)
+    }
 
     useEffect(() => {
         const id = cookies.get("id");
@@ -43,7 +53,7 @@ export const Header = () => {
                     )}
                 </div>
             </Link>
-            <div className="cart">
+            <div className="cart" onClick={toogleMenu}>
                 <box-icon name="cart"></box-icon>
                 <span className="item__total">0</span>
             </div>
