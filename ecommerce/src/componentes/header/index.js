@@ -13,8 +13,7 @@ export const Header = () => {
 
     const value = useContext(DataContext);
     const [menu, setMenu] = value.menu;
-
-    console.log(menu);
+    const [carrito] = value.carrito;
 
     const toogleMenu = () =>{
         setMenu(!menu)
@@ -55,7 +54,7 @@ export const Header = () => {
             </Link>
             <div className="cart" onClick={toogleMenu}>
                 <box-icon name="cart"></box-icon>
-                <span className="item__total">0</span>
+                <span className="item__total">{carrito.length}</span>
             </div>
         </header>
     )
