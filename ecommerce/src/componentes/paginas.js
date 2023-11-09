@@ -8,6 +8,7 @@ export const Paginas = () => {
     return(
         <section>
             <Routes>
+                <Route path="/" element={<Inicio/>} />
                 <Route path="/login" element={<Login/>} />
                 <Route path="/inicio" element={<Inicio/>} />
                 <Route path="/productos" element={<ProductosLista/>} />
