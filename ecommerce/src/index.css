@@ -470,6 +470,47 @@ header .perfil{
   text-transform: uppercase;
   
 }
+/*-----------------------Acercade---------------------------------------*/
+.acerca-de-container {
+  padding: 15rem;
+  margin:  0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3rem 2rem;
+  box-sizing: border-box;
+  background-color: rgb(10, 226, 154); /* Color de fondo del contenedor */
+}
+
+.acerca-de {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 100px;
+  text-align: justify;
+  background-color: #fff; /* Color de fondo del contenido */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.acerca-de h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  margin-top: -20px;
+}
+
+.acerca-de p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.equipo-imagen {
+
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  display: block; /* Asegura que el margen automático funcione */
+  margin-bottom: 15px;
+  width: 60%; /* Asegura que la imagen ocupe el ancho completo del contenedor */
+  padding: 50px;
+}
 
 /*responsive: desaparece la lista cuando la pantalla es menor a 600px*/
 /*--------------------MEDIA---------------------*/
@@ -502,9 +543,8 @@ header .perfil{
   .carrito__item h3{
     display: .5rem;
   }
-
-.carrito__item .remove__item box-icon{
+  .carrito__item .remove__item box-icon{
   width: 30px;
   height: 70px;
-}
+  }
 }

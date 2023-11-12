@@ -40,7 +40,10 @@ export const Header = () => {
                     <Link to="/inicio">INICIO</Link>
                 </li>
                 <li>
-                    <Link to="/productos">PRODUCTO</Link>
+                    <Link to="/productos">PRODUCTO</Link>                    
+                </li>
+                <li>
+                    <Link to="/acercade">Acerca de</Link>                    
                 </li>
             </ul>
             <Link to="/login">
