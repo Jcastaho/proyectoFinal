@@ -83,7 +83,8 @@ export const Carrito = () => {
                 </div>
                 <div className="carrito__footer">
                     <h3>Total: ${total}</h3>
-                    <button className="btn">Payment</button>
+                    <button className="btn"
+                    onClick={()=> {}}>Pagar</button>
                 </div>
             </div>
         </div>
